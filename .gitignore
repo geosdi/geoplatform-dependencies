@@ -20,3 +20,15 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.idea/
+/geoplatform-dependencies.iml
+/geoplatform-swagger-dependency/geoplatform-swagger-dependency.iml
+/geoplatform-spring-dependency/geoplatform-spring-dependency.iml
+/geoplatform-slf4j-dependency/geoplatform-slf4j-dependency.iml
+/geoplatform-rx2java-dependency/geoplatform-rx2java-dependency.iml
+/geoplatform-lombok-dependency/geoplatform-lombok-dependency.iml
+/geoplatform-jackson-dependency/geoplatform-jackson-dependency.iml
+/geoplatform-httpclient-dependency/geoplatform-httpclient-dependency.iml
+/geoplatform-hibernate-validator-dependency/geoplatform-hibernate-validator-dependency.iml
+/geoplatform-dropwizard-dependency/geoplatform-dropwizard-dependency.iml
+/geoplatform-cxf-dependency/geoplatform-cxf-dependency.iml
