@@ -4,7 +4,7 @@
 
     <groupId>org.geosdi</groupId>
     <artifactId>geoplatform-dependencies</artifactId>
-    <version>1.7.1</version>
+    <version>1.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Geo-Platform :: == Dependencies Module</name>
@@ -13,7 +13,7 @@
         <url>https://github.com/geosdi/geoplatform-dependencies.git</url>
         <connection>scm:git:git://github.com/geosdi/geoplatform-dependencies.git</connection>
         <developerConnection>scm:git:git@github.com:geosdi/geoplatform-dependencies.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.7.1</tag>
     </scm>
 
     <mailingLists>
@@ -86,6 +86,15 @@
                         <email>giuseppe.lascaleia@geosdi.org</email>
                     </properties>
                     <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
         </plugins>
