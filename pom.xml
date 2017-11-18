@@ -4,7 +4,7 @@
 
     <groupId>org.geosdi</groupId>
     <artifactId>geoplatform-dependencies</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.7.1</version>
     <packaging>pom</packaging>
 
     <name>Geo-Platform :: == Dependencies Module</name>
@@ -13,7 +13,7 @@
         <url>https://github.com/geosdi/geoplatform-dependencies.git</url>
         <connection>scm:git:git://github.com/geosdi/geoplatform-dependencies.git</connection>
         <developerConnection>scm:git:git@github.com:geosdi/geoplatform-dependencies.git</developerConnection>
-        <tag>1.7.1</tag>
+        <tag>geoplatform-dependencies-1.7.1</tag>
     </scm>
 
     <mailingLists>
