@@ -5,12 +5,12 @@
     <parent>
         <groupId>org.geosdi</groupId>
         <artifactId>geoplatform-dependencies</artifactId>
-        <version>1.8-SNAPSHOT</version>
+        <version>1.9-SNAPSHOT</version>
     </parent>
 
     <groupId>org.geosdi</groupId>
     <artifactId>geoplatform-httpclient-dependency</artifactId>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Geo-Platform :: == HttpClient Dependencies Module</name>
@@ -42,9 +42,9 @@
     </dependencyManagement>
     
     <properties>
-        <httpcomponents-core-version>4.4.7</httpcomponents-core-version>
-        <httpcomponents-client-version>4.5.3</httpcomponents-client-version>
-        <httpcomponents-mime-version>4.5.3</httpcomponents-mime-version>
+        <httpcomponents-core-version>4.4.8</httpcomponents-core-version>
+        <httpcomponents-client-version>4.5.4</httpcomponents-client-version>
+        <httpcomponents-mime-version>4.5.4</httpcomponents-mime-version>
     </properties>
 
 </project>
