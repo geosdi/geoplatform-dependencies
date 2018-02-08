@@ -33,3 +33,4 @@ hs_err_pid*
 /geoplatform-dropwizard-dependency/geoplatform-dropwizard-dependency.iml
 /geoplatform-cxf-dependency/geoplatform-cxf-dependency.iml
 /geoplatform-hibernate-validator-dependency/.idea/
+/geoplatform-cxf-dependency/.idea/
