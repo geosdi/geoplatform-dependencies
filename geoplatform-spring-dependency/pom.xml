@@ -5,12 +5,12 @@
     <parent>
         <groupId>org.geosdi</groupId>
         <artifactId>geoplatform-dependencies</artifactId>
-        <version>1.8-SNAPSHOT</version>
+        <version>1.9-SNAPSHOT</version>
     </parent>
 
     <groupId>org.geosdi</groupId>
     <artifactId>geoplatform-spring-dependency</artifactId>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Geo-Platform :: == Spring Dependencies Module</name>
@@ -175,10 +175,10 @@
     </dependencyManagement>
 
     <properties>
-        <spring-version>4.3.14.RELEASE</spring-version>
+        <spring-version>5.0.4.RELEASE</spring-version>
         <spring-support>2.0.8</spring-support>
-        <spring-security-version>5.0.1.RELEASE</spring-security-version>
-        <spring-batch.version>4.0.0.RELEASE</spring-batch.version>
+        <spring-security-version>5.0.3.RELEASE</spring-security-version>
+        <spring-batch.version>4.0.1.RELEASE</spring-batch.version>
     </properties>
 
 </project>
