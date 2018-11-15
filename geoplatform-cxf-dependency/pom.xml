@@ -137,6 +137,15 @@
                 <artifactId>cxf-rt-rs-security-cors</artifactId>
                 <version>${cxf-version}</version>
             </dependency>
+            
+            <!-- =========================================================== -->
+            <!-- ================= CXF SPRING BOOT STARTER =================  -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
+                <version>${cxf-version}</version>
+            </dependency>
 
             <!-- =========================================================== -->
             <!-- ======================= LOGGING FEATURE ===================  -->
