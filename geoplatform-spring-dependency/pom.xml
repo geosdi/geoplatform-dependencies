@@ -175,10 +175,10 @@
     </dependencyManagement>
 
     <properties>
-        <spring-version>5.1.4.RELEASE</spring-version>
+        <spring-version>5.1.5.RELEASE</spring-version>
         <spring-support>2.0.8</spring-support>
-        <spring-security-version>5.1.2.RELEASE</spring-security-version>
-        <spring-batch.version>4.1.0.RELEASE</spring-batch.version>
+        <spring-security-version>5.1.4.RELEASE</spring-security-version>
+        <spring-batch.version>4.1.1.RELEASE</spring-batch.version>
     </properties>
 
 </project>
