@@ -190,10 +190,10 @@
     </dependencyManagement>
     
     <properties>
-        <cxf-version>3.3.0</cxf-version>
+        <cxf-version>3.3.1</cxf-version>
         <xmlsec-version>2.1.2</xmlsec-version>
         <wss4j-version>2.2.2</wss4j-version>
-        <fastinfoset-version>1.2.15</fastinfoset-version>
+        <fastinfoset-version>1.2.16</fastinfoset-version>
     </properties>
 
 </project>
