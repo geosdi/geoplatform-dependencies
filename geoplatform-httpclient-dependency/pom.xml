@@ -43,8 +43,8 @@
     
     <properties>
         <httpcomponents-core-version>4.4.11</httpcomponents-core-version>
-        <httpcomponents-client-version>4.5.7</httpcomponents-client-version>
-        <httpcomponents-mime-version>4.5.7</httpcomponents-mime-version>
+        <httpcomponents-client-version>4.5.8</httpcomponents-client-version>
+        <httpcomponents-mime-version>4.5.8</httpcomponents-mime-version>
     </properties>
 
 </project>
