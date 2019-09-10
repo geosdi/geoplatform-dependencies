@@ -42,9 +42,9 @@
     </dependencyManagement>
     
     <properties>
-        <httpcomponents-core-version>4.4.11</httpcomponents-core-version>
-        <httpcomponents-client-version>4.5.9</httpcomponents-client-version>
-        <httpcomponents-mime-version>4.5.9</httpcomponents-mime-version>
+        <httpcomponents-core-version>4.4.12</httpcomponents-core-version>
+        <httpcomponents-client-version>4.5.10</httpcomponents-client-version>
+        <httpcomponents-mime-version>4.5.10</httpcomponents-mime-version>
     </properties>
 
 </project>
