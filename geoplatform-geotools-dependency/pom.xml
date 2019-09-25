@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+      <groupId>org.geosdi</groupId>
+      <artifactId>geoplatform-dependencies</artifactId>
+      <version>1.9-SNAPSHOT</version>
+  </parent>
+
+  <groupId>org.geosdi</groupId>
+  <artifactId>geoplatform-geotools-dependency</artifactId>
+  <version>1.9-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Geo-Platform :: == Geotools Dependencies Module</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+  
+  <repositories>
+      <!-- OSGEO -->
+      <repository>
+          <id>osgeo</id>
+          <name>Open Source Geospatial Foundation Repository</name>
+          <url>http://download.osgeo.org/webdav/geotools/</url>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </repository>
+      
+      <repository>
+          <id>boundlessgeo</id>
+          <name>Open Source Geospatial Foundation Repository</name>
+          <url>https://repo.boundlessgeo.com/release/</url>
+      </repository>
+      
+      <repository>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+          <id>boundless</id>
+          <name>Boundless Maven Repository</name>
+          <url>http://repo.boundlessgeo.com/main</url>
+      </repository>
+  </repositories>
+  
+  <dependencyManagement>
+      <dependencies>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-main</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-wms</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-wps</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-api</artifactId>
+            <version>20.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-referencing</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-metadata</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-epsg-hsql</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-epsg-h2</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-epsg-extension</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-geotiff</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.xsd</groupId>
+            <artifactId>gt-xsd-sld</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-xml</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-coveragetools</artifactId>
+            <version>${gt-coveragetools.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.sf.ehcache</groupId>
+                    <artifactId>ehcache</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-shapefile</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-postgis</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-epsg-wkt</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.geotools.xsd</groupId>
+            <artifactId>gt-xsd-core</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-jts-wrapper</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+
+      </dependencies>
+  </dependencyManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <gt-version>21.3</gt-version>
+    <gt-coveragetools.version>15.4</gt-coveragetools.version>
+  </properties>
+
+</project>
