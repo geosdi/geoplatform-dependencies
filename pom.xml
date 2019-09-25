@@ -122,6 +122,7 @@
         <module>geoplatform-hibernate-validator-dependency</module>
         <module>geoplatform-rx2java-dependency</module>
         <module>geoplatform-lombok-dependency</module>
+        <module>geoplatform-geotools-dependency</module>
     </modules>
 
 </project>
