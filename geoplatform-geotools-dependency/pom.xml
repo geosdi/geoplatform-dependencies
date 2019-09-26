@@ -65,7 +65,7 @@
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-api</artifactId>
-            <version>20.5</version>
+            <version>${gt-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.geotools</groupId>
@@ -153,6 +153,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <gt-version>15.4</gt-version>
     <gt-coveragetools.version>15.4</gt-coveragetools.version>
+    <gt-api.version>15.4</gt-api.version>
   </properties>
 
 </project>
