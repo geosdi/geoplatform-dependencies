@@ -34,3 +34,5 @@ hs_err_pid*
 /geoplatform-cxf-dependency/geoplatform-cxf-dependency.iml
 /geoplatform-hibernate-validator-dependency/.idea/
 /geoplatform-cxf-dependency/.idea/
+geoplatform-geotools-dependency.iml
+/geoplatform-geotools-dependency/.idea
