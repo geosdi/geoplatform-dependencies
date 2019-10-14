@@ -114,8 +114,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson-version>2.10.0</jackson-version>
-        <woodstox-core.version>6.0.1</woodstox-core.version>
-        <aalto-xml.version>1.2.1</aalto-xml.version>
+        <woodstox-core.version>6.0.2</woodstox-core.version>
+        <aalto-xml.version>1.2.2</aalto-xml.version>
     </properties>
 
 </project>
