@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.geosdi</groupId>
+        <artifactId>geoplatform-dependencies</artifactId>
+        <version>1.9-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.geosdi</groupId>
+    <artifactId>geoplatform-elasticsearch-dependency</artifactId>
+    <version>1.9-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Geo-Platform :: == ElasticSearch Dependencies Module</name>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- =========================================================== -->
+            <!-- ====================== ELASTIC SEARCH ===================== -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch-version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.dataformat</groupId>
+                        <artifactId>jackson-dataformat-smile</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- =========================================================== -->
+            <!-- ================ ELASTIC SEARCH TRANSPORT ================= -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>transport</artifactId>
+                <version>${elasticsearch-version}</version>
+            </dependency>
+
+            <!-- =========================================================== -->
+            <!-- ============= ELASTIC SEARCH REST HIGH LEVEL CLIENT ======= -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch-version}</version>
+            </dependency>
+
+            <!-- =========================================================== -->
+            <!-- ====================== SPATIAL SUPPORT ==================== -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.locationtech.spatial4j</groupId>
+                <artifactId>spatial4j</artifactId>
+                <version>${spatial4j.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <elasticsearch-version>7.4.0</elasticsearch-version>
+        <spatial4j.version>0.7</spatial4j.version>
+    </properties>
+</project>
