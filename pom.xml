@@ -123,6 +123,7 @@
         <module>geoplatform-rx2java-dependency</module>
         <module>geoplatform-lombok-dependency</module>
         <module>geoplatform-geotools-dependency</module>
+        <module>geoplatform-elasticsearch-dependency</module>
     </modules>
 
 </project>

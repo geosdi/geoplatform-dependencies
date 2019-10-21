@@ -36,3 +36,4 @@ hs_err_pid*
 /geoplatform-cxf-dependency/.idea/
 geoplatform-geotools-dependency.iml
 /geoplatform-geotools-dependency/.idea
+/geoplatform-elasticsearch-dependency/geoplatform-elasticsearch-dependency.iml
