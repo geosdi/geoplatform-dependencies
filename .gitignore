@@ -25,7 +25,6 @@ hs_err_pid*
 /geoplatform-swagger-dependency/geoplatform-swagger-dependency.iml
 /geoplatform-spring-dependency/geoplatform-spring-dependency.iml
 /geoplatform-slf4j-dependency/geoplatform-slf4j-dependency.iml
-/geoplatform-rx2java-dependency/geoplatform-rx2java-dependency.iml
 /geoplatform-lombok-dependency/geoplatform-lombok-dependency.iml
 /geoplatform-jackson-dependency/geoplatform-jackson-dependency.iml
 /geoplatform-httpclient-dependency/geoplatform-httpclient-dependency.iml
@@ -37,3 +36,4 @@ hs_err_pid*
 geoplatform-geotools-dependency.iml
 /geoplatform-geotools-dependency/.idea
 /geoplatform-elasticsearch-dependency/geoplatform-elasticsearch-dependency.iml
+/geoplatform-rxjava-dependency/geoplatform-rxjava-dependency.iml
