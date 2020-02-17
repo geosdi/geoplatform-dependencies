@@ -120,7 +120,7 @@
         <module>geoplatform-swagger-dependency</module>
         <module>geoplatform-httpclient-dependency</module>
         <module>geoplatform-hibernate-validator-dependency</module>
-        <module>geoplatform-rx2java-dependency</module>
+        <module>geoplatform-rxjava-dependency</module>
         <module>geoplatform-lombok-dependency</module>
         <module>geoplatform-geotools-dependency</module>
         <module>geoplatform-elasticsearch-dependency</module>
