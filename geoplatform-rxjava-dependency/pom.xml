@@ -39,8 +39,8 @@
     </dependencyManagement>
     
     <properties>
-        <rxjava2.version>2.2.17</rxjava2.version>
-        <rxjava3.version>3.0.0</rxjava3.version>
+        <rxjava2.version>2.2.19</rxjava2.version>
+        <rxjava3.version>3.0.1</rxjava3.version>
     </properties>
 
 </project>
