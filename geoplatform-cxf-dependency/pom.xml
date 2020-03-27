@@ -171,7 +171,7 @@
             <dependency>
                 <groupId>wsdl4j</groupId>
                 <artifactId>wsdl4j</artifactId>
-                <version>1.6.3</version>
+                <version>1.6.3_1</version>
             </dependency>
 
             <dependency>
@@ -190,10 +190,10 @@
     </dependencyManagement>
     
     <properties>
-        <cxf-version>3.3.5</cxf-version>
-        <xmlsec-version>2.1.4</xmlsec-version>
-        <wss4j-version>2.2.4</wss4j-version>
-        <fastinfoset-version>1.2.16</fastinfoset-version>
+        <cxf-version>3.3.6</cxf-version>
+        <xmlsec-version>2.1.5</xmlsec-version>
+        <wss4j-version>2.2.5</wss4j-version>
+        <fastinfoset-version>1.2.18</fastinfoset-version>
     </properties>
 
 </project>
