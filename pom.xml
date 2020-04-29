@@ -109,6 +109,11 @@
                     <releaseProfiles>release</releaseProfiles>
                 </configuration>
             </plugin>
+            
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
 
         </plugins>
 
