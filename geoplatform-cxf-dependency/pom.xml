@@ -190,9 +190,9 @@
     </dependencyManagement>
     
     <properties>
-        <cxf-version>3.3.7</cxf-version>
-        <xmlsec-version>2.1.5</xmlsec-version>
-        <wss4j-version>2.2.5</wss4j-version>
+        <cxf-version>3.4.0</cxf-version>
+        <xmlsec-version>2.2.0</xmlsec-version>
+        <wss4j-version>2.3.0</wss4j-version>
         <fastinfoset-version>1.2.18</fastinfoset-version>
     </properties>
 
