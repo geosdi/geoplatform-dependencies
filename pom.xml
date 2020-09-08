@@ -130,6 +130,7 @@
         <module>geoplatform-lombok-dependency</module>
         <module>geoplatform-geotools-dependency</module>
         <module>geoplatform-elasticsearch-dependency</module>
+        <module>geoplatform-junit5-dependency</module>
     </modules>
 
 </project>
