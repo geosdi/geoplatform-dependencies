@@ -141,7 +141,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <gt-version>23.2</gt-version>
+    <gt-version>24.0</gt-version>
     <gt-api.version>20.5</gt-api.version>
     <gt-coveragetools.version>15.4</gt-coveragetools.version>
   </properties>
