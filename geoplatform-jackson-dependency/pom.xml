@@ -113,7 +113,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson-version>2.11.2</jackson-version>
+        <jackson-version>2.11.3</jackson-version>
         <woodstox-core.version>6.2.1</woodstox-core.version>
         <aalto-xml.version>1.2.2</aalto-xml.version>
     </properties>
