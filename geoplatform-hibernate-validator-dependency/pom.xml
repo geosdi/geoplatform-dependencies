@@ -41,7 +41,7 @@
     </dependencyManagement>
 
     <properties>
-        <hibernate-validator-version>7.0.0.Final</hibernate-validator-version>
+        <hibernate-validator-version>7.0.1.Final</hibernate-validator-version>
         <jakarta.validation-api.version>3.0.0</jakarta.validation-api.version>
     </properties>
 
