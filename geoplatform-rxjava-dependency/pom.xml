@@ -39,7 +39,7 @@
     </dependencyManagement>
     
     <properties>
-        <rxjava2.version>2.2.20</rxjava2.version>
+        <rxjava2.version>2.2.21</rxjava2.version>
         <rxjava3.version>3.0.10</rxjava3.version>
     </properties>
 
