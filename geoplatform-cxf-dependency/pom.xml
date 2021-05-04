@@ -172,6 +172,15 @@
                 <version>${cxf-version}</version>
             </dependency>
             
+            <!-- =========================================================== -->
+            <!-- ======================= METRICS FEATURE ===================  -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-features-metrics</artifactId>
+                <version>${cxf-version}</version>
+            </dependency>
+            
             <dependency>
                 <groupId>org.apache.wss4j</groupId>
                 <artifactId>wss4j-ws-security-common</artifactId>
