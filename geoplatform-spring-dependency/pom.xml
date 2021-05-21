@@ -177,8 +177,8 @@
     <properties>
         <spring-version>5.3.7</spring-version>
         <spring-support>2.0.8</spring-support>
-        <spring-security-version>5.4.6</spring-security-version>
-        <spring-batch.version>4.3.2</spring-batch.version>
+        <spring-security-version>5.5.0</spring-security-version>
+        <spring-batch.version>4.3.3</spring-batch.version>
     </properties>
 
 </project>
