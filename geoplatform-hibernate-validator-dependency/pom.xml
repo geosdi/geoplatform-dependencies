@@ -13,7 +13,7 @@
     <version>1.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Geo-Platform :: == Hibernte Validator Dependencies Module</name>
+    <name>Geo-Platform :: == Hibernate Validator Dependencies Module</name>
 
     <dependencyManagement>
         <dependencies>
