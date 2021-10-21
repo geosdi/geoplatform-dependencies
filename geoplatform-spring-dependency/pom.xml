@@ -175,9 +175,9 @@
     </dependencyManagement>
 
     <properties>
-        <spring-version>5.3.11</spring-version>
+        <spring-version>5.3.12</spring-version>
         <spring-support>2.0.8</spring-support>
-        <spring-security-version>5.5.2</spring-security-version>
+        <spring-security-version>5.5.3</spring-security-version>
         <spring-batch.version>4.3.3</spring-batch.version>
     </properties>
 
