@@ -215,9 +215,9 @@
     </dependencyManagement>
     
     <properties>
-        <cxf-version>3.3.11</cxf-version>
-        <xmlsec-version>2.1.6</xmlsec-version>
-        <wss4j-version>2.2.6</wss4j-version>
+        <cxf-version>3.3.12</cxf-version>
+        <xmlsec-version>2.1.7</xmlsec-version>
+        <wss4j-version>2.2.7</wss4j-version>
         <fastinfoset-version>1.2.18</fastinfoset-version>
     </properties>
 
