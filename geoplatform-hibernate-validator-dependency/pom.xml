@@ -35,13 +35,13 @@
             <dependency>
                 <groupId>org.glassfish</groupId>
                 <artifactId>jakarta.el</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <properties>
-        <hibernate-validator-version>7.0.1.Final</hibernate-validator-version>
+        <hibernate-validator-version>7.0.2.Final</hibernate-validator-version>
         <jakarta.validation-api.version>3.0.0</jakarta.validation-api.version>
     </properties>
 
