@@ -35,6 +35,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit-engine.version>5.8.1</junit-engine.version>
+        <junit-engine.version>5.8.2</junit-engine.version>
     </properties>
 </project>
