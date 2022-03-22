@@ -11,6 +11,6 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'org.projectlombok:lombok:${lombokVersion}'
+        dependency 'org.projectlombok:lombok:' + lombokVersion
     }
 }

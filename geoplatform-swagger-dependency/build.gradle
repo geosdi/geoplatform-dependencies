@@ -11,7 +11,7 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'io.swagger:swagger-core:${swaggerVersion}'
-        dependency 'io.swagger:swagger-jaxrs:${swaggerVersion}'
+        dependency 'io.swagger:swagger-core:' + swaggerVersion
+        dependency 'io.swagger:swagger-jaxrs:' + swaggerVersion
     }
 }

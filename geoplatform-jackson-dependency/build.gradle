@@ -11,20 +11,20 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'com.fasterxml.jackson.core:jackson-core:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.module:jackson-module-mrbean:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.module:jackson-module-afterburner:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.datatype:jackson-datatype-joda:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.datatype:jackson-datatype-guava:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:${jacksonVersion}'
-        dependency 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations:${jacksonVersion}'
-        dependency 'com.fasterxml.woodstox:woodstox-core:${woodstoxCoreVersion}'
-        dependency 'com.fasterxml:aalto-xml:${aaltoXmlVersion}'
+        dependency 'com.fasterxml.jackson.core:jackson-core:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.core:jackson-annotations:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.core:jackson-databind:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.module:jackson-module-mrbean:' +jacksonVersion
+        dependency 'com.fasterxml.jackson.module:jackson-module-afterburner:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.datatype:jackson-datatype-joda:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.datatype:jackson-datatype-guava:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations:' + jacksonVersion
+        dependency 'com.fasterxml.woodstox:woodstox-core:' + woodstoxCoreVersion
+        dependency 'com.fasterxml:aalto-xml:' + aaltoXmlVersion
     }
 }

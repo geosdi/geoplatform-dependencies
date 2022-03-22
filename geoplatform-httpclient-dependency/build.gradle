@@ -11,10 +11,10 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'org.apache.httpcomponents:httpclient:${httpComponentsClientVersion}'
-        dependency 'org.apache.httpcomponents:httpcore:${httpComponentsCoreVersion}'
-        dependency 'org.apache.httpcomponents:httpmime:${httpComponentsMimeVersion}'
-        dependency 'org.apache.httpcomponents.client5:httpclient5:${httpComponentsClient5Version}'
-        dependency 'org.apache.httpcomponents.core5:httpcore5:${httpComponentsCore5Version}'
+        dependency 'org.apache.httpcomponents:httpclient:' + httpComponentsClientVersion
+        dependency 'org.apache.httpcomponents:httpcore:' + httpComponentsCoreVersion
+        dependency 'org.apache.httpcomponents:httpmime:' + httpComponentsMimeVersion
+        dependency 'org.apache.httpcomponents.client5:httpclient5:' + httpComponentsClient5Version
+        dependency 'org.apache.httpcomponents.core5:httpcore5:' + httpComponentsCore5Version
     }
 }

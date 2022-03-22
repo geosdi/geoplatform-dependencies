@@ -11,12 +11,12 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency ('org.elasticsearch:elasticsearch:${elastiSearchVersion}'){
+        dependency ('org.elasticsearch:elasticsearch:' + elastiSearchVersion){
             exclude 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile'
         }
-        dependency 'org.elasticsearch.client:transport:${elastiSearchVersion}'
-        dependency 'org.elasticsearch.client:elasticsearch-rest-high-level-client:${elastiSearchVersion}'
-        dependency 'org.locationtech.spatial4j:spatial4j:${spatial4jVersion}'
+        dependency 'org.elasticsearch.client:transport:' + elastiSearchVersion
+        dependency 'org.elasticsearch.client:elasticsearch-rest-high-level-client:' + elastiSearchVersion
+        dependency 'org.locationtech.spatial4j:spatial4j:' + spatial4jVersion
 
     }
 }
