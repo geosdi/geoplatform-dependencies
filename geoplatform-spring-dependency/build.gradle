@@ -26,29 +26,29 @@ repositories {
 
 dependencyManagement {
     dependencies {
-        dependency 'org.springframework:spring-expression:${springVersion}'
-        dependency 'org.springframework:spring-jmx:${springVersion}'
-        dependency 'org.springframework:spring-beans:${springVersion}'
-        dependency 'org.springframework:spring-context:${springVersion}'
-        dependency 'org.springframework:spring-core:${springVersion}'
-        dependency 'org.springframework:spring-tx:${springVersion}'
-        dependency 'org.springframework:spring-context-support:${springVersion}'
-        dependency 'org.springframework:spring-oxm:${springVersion}'
-        dependency 'org.springframework:spring-jdbc:${springVersion}'
-        dependency 'org.springframework:spring-aop:${springVersion}'
-        dependency 'org.springframework:spring-orm:${springVersion}'
-        dependency 'org.springframework:spring-jms:${springVersion}'
-        dependency 'org.springframework:spring-websocket:${springVersion}'
-        dependency 'org.springframework:spring-messaging:${springVersion}'
+        dependency 'org.springframework:spring-expression:' + springVersion
+        dependency 'org.springframework:spring-jmx:' + springVersion
+        dependency 'org.springframework:spring-beans:' + springVersion
+        dependency 'org.springframework:spring-context:' + springVersion
+        dependency 'org.springframework:spring-core:' + springVersion
+        dependency 'org.springframework:spring-tx:' + springVersion
+        dependency 'org.springframework:spring-context-support:' + springVersion
+        dependency 'org.springframework:spring-oxm:' + springVersion
+        dependency 'org.springframework:spring-jdbc:' + springVersion
+        dependency 'org.springframework:spring-aop:' + springVersion
+        dependency 'org.springframework:spring-orm:' + springVersion
+        dependency 'org.springframework:spring-jms:' + springVersion
+        dependency 'org.springframework:spring-websocket:' + springVersion
+        dependency 'org.springframework:spring-messaging:' + springVersion
         dependency 'javax.inject:javax.inject:1'
-        dependency 'org.springframework:spring-web:${springVersion}'
-        dependency ('org.springframework:spring-test:${springVersion}'){
+        dependency 'org.springframework:spring-web:' + springVersion
+        dependency ('org.springframework:spring-test:' + springVersion){
             exclude 'commons-collections:commons-collections'
             exclude 'xerces:xercesImpl'
         }
-        dependency 'org.springframework.security:spring-security-core:${springSecurityVersion}'
-        dependency 'org.springframework.security:spring-security-taglibs:${springSecurityVersion}'
-        dependency 'org.springframework.security:spring-security-acl:${springSecurityVersion}'
-        dependency 'org.springframework.batch:spring-batch-core:${springBatchVersion}'
+        dependency 'org.springframework.security:spring-security-core:' + springSecurityVersion
+        dependency 'org.springframework.security:spring-security-taglibs:' + springSecurityVersion
+        dependency 'org.springframework.security:spring-security-acl:' + springSecurityVersion
+        dependency 'org.springframework.batch:spring-batch-core:' + springBatchVersion
     }
 }

@@ -11,7 +11,7 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'org.junit.jupiter:junit-jupiter-engine:${junitEngineVersion}'
-        dependency 'org.junit.vintage:junit-vintage-engine:${junitEngineVersion}'
+        dependency 'org.junit.jupiter:junit-jupiter-engine:' + junitEngineVersion
+        dependency 'org.junit.vintage:junit-vintage-engine:' + junitEngineVersion
     }
 }

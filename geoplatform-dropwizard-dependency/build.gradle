@@ -11,22 +11,22 @@ plugins {
 
 dependencyManagement {
     dependencies {
-        dependency 'io.dropwizard:dropwizard-core:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-views:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-validation:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-configuration:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-metrics:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-lifecycle:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-jetty:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-util:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-assets:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-servlets:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-spdy:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-logging:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-jersey:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-auth:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-jackson:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-client:${dropWizardVersion}'
-        dependency 'io.dropwizard:dropwizard-testing:${dropWizardVersion}'
+        dependency 'io.dropwizard:dropwizard-core:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-views:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-validation:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-configuration:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-metrics:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-lifecycle:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-jetty:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-util:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-assets:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-servlets:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-spdy:' +dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-logging:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-jersey:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-auth:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-jackson:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-client:' + dropWizardVersion
+        dependency 'io.dropwizard:dropwizard-testing:' +dropWizardVersion
     }
 }
