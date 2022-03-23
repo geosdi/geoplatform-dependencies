@@ -18,6 +18,6 @@ dependencyManagement {
     dependencies {
         dependency 'org.hibernate.validator:hibernate-validator:' + hibernateValidatorVersion
         dependency 'jakarta.validation:jakarta.validation-api:' + jakartaValidationApiVersion
-        dependency 'org.glassfish:jakarta.el:3.0.3'
+        dependency 'org.glassfish:jakarta.el:4.0.1'
     }
 }
