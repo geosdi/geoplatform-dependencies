@@ -9,6 +9,13 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    cxfVersion = "3.5.1";
+    wss4jVersion = "2.4.1";
+    xmlSecVersion = "2.3.0";
+    fastInfosetVersion = "1.2.18";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.apache.cxf:cxf-core:' + cxfVersion
@@ -21,11 +28,11 @@ dependencyManagement {
         dependency 'org.apache.cxf:cxf-rt-rs-service-description-microprofile-openapi:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-transports-http-hc:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-frontend-simple:' + cxfVersion
-        dependency ('org.apache.cxf:cxf-rt-frontend-jaxws:' + cxfVersion) {
+        dependency('org.apache.cxf:cxf-rt-frontend-jaxws:' + cxfVersion) {
             exclude 'org.apache.geronimo.specs:geronimo-annotation_1.0_spec'
             exclude 'org.apache.geronimo.specs:geronimo-javamail_1.4_spec'
         }
-        dependency ('org.apache.cxf:cxf-rt-bindings-soap:' + cxfVersion) {
+        dependency('org.apache.cxf:cxf-rt-bindings-soap:' + cxfVersion) {
             exclude 'org.apache.geronimo.specs:geronimo-javamail_1.4_spec'
         }
         dependency 'org.apache.cxf:cxf-rt-databinding-aegis:' + cxfVersion

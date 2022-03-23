@@ -9,6 +9,10 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    lombokVersion = "1.18.22";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.projectlombok:lombok:' + lombokVersion

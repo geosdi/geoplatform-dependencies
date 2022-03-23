@@ -9,6 +9,11 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    hibernateValidatorVersion = "7.0.4.Final";
+    jakartaValidationApiVersion = "3.0.0";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.hibernate.validator:hibernate-validator:' + hibernateValidatorVersion

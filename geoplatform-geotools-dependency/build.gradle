@@ -24,6 +24,12 @@ repositories {
     }
 }
 
+ext {
+    gtVersion = "26.3";
+    gtCoverageToolsVersion = "15.4";
+    gtApiVersion = "20.5";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.geotools:gt-main:' + gtVersion
@@ -38,9 +44,9 @@ dependencyManagement {
         dependency 'org.geotools:gt-geotiff:' + gtVersion
         dependency 'org.geotools.xsd:gt-xsd-sld:' + gtVersion
         dependency 'org.geotools:gt-xml:' + gtVersion
-        dependency ('org.geotools:gt-coveragetools:' + gtCoverageToolsVersion) {
-                exclude 'net.sf.ehcache:ehcache'
-                }
+        dependency('org.geotools:gt-coveragetools:' + gtCoverageToolsVersion) {
+            exclude 'net.sf.ehcache:ehcache'
+        }
         dependency 'org.geotools:gt-shapefile:' + gtVersion
         dependency 'org.geotools.jdbc:gt-jdbc-postgis:' + gtVersion
         dependency 'org.geotools:gt-epsg-wkt:' + gtVersion
