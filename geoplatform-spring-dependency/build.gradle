@@ -34,7 +34,7 @@ ext {
 dependencyManagement {
     dependencies {
         dependency 'org.springframework:spring-expression:' + springVersion
-        dependency 'org.springframework:spring-jmx:' + springVersion
+        dependency 'org.springframework:spring-jmx:' + spring-support
         dependency 'org.springframework:spring-beans:' + springVersion
         dependency 'org.springframework:spring-context:' + springVersion
         dependency 'org.springframework:spring-core:' + springVersion
