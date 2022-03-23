@@ -9,6 +9,14 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    httpComponentsClientVersion = "4.5.13";
+    httpComponentsCoreVersion = "4.4.14";
+    httpComponentsMimeVersion = "4.5.13";
+    httpComponentsClient5Version = "5.1";
+    httpComponentsCore5Version = "5.1.2";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.apache.httpcomponents:httpclient:' + httpComponentsClientVersion

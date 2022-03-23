@@ -9,6 +9,11 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    elastiSearchVersion = "7.17.1";
+    spatial4jVersion = "0.8";
+}
+
 dependencyManagement {
     dependencies {
         dependency ('org.elasticsearch:elasticsearch:' + elastiSearchVersion){

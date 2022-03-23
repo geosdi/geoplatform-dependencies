@@ -9,6 +9,10 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    dropWizardVersion = "1.3.24";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'io.dropwizard:dropwizard-core:' + dropWizardVersion

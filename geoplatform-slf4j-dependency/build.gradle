@@ -9,6 +9,10 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+ext {
+    sl4jVersion = "1.7.32";
+}
+
 dependencyManagement {
     dependencies {
         dependency 'org.slf4j:slf4j-api:' + sl4jVersion
