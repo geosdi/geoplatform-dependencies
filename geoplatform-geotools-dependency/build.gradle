@@ -28,6 +28,7 @@ ext {
     gtVersion = "27.0";
     gtCoverageToolsVersion = "15.4";
     gtApiVersion = "20.5";
+    gtApiVersion = "2.7.4-GBE-276"
 }
 
 dependencyManagement {
@@ -35,6 +36,7 @@ dependencyManagement {
         dependency 'org.geotools:gt-main:' + gtVersion
         dependency 'org.geotools:gt-wms:' + gtVersion
         dependency 'org.geotools:gt-wps:' + gtVersion
+        dependency 'org.geotools:gt-api:' + gtApiVersion
         dependency 'org.geotools:gt-referencing:' + gtVersion
         dependency 'org.geotools:gt-metadata:' + gtVersion
         dependency 'org.geotools:gt-epsg-hsql:' + gtVersion
