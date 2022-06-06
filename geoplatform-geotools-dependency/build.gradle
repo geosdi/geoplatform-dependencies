@@ -35,7 +35,6 @@ dependencyManagement {
         dependency 'org.geotools:gt-main:' + gtVersion
         dependency 'org.geotools:gt-wms:' + gtVersion
         dependency 'org.geotools:gt-wps:' + gtVersion
-        dependency 'org.geotools:gt-api:' + gtApiVersion
         dependency 'org.geotools:gt-referencing:' + gtVersion
         dependency 'org.geotools:gt-metadata:' + gtVersion
         dependency 'org.geotools:gt-epsg-hsql:' + gtVersion
