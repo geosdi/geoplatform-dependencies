@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    cxfVersion = "3.5.2";
+    cxfVersion = "3.5.3";
     wss4jVersion = "2.4.1";
     xmlSecVersion = "2.3.0";
     fastInfosetVersion = "1.2.18";
