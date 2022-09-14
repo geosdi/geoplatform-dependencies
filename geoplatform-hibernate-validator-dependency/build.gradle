@@ -10,14 +10,14 @@ plugins {
 }
 
 ext {
-    hibernateValidatorVersion = "7.0.5.Final";
-    jakartaValidationApiVersion = "3.0.0";
+    hibernateValidatorVersion = "8.0.0.Final";
+    jakartaValidationApiVersion = "3.0.2";
 }
 
 dependencyManagement {
     dependencies {
         dependency 'org.hibernate.validator:hibernate-validator:' + hibernateValidatorVersion
         dependency 'jakarta.validation:jakarta.validation-api:' + jakartaValidationApiVersion
-        dependency 'org.glassfish:jakarta.el:4.0.1'
+        dependency 'org.glassfish:jakarta.el:4.0.2'
     }
 }
