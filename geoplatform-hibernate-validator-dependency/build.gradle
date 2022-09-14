@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    hibernateValidatorVersion = "6.2.4.Final";
+    hibernateValidatorVersion = "6.2.5.Final";
     jakartaValidationApiVersion = "2.0.2";
 }
 
