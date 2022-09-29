@@ -99,7 +99,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
@@ -111,7 +111,7 @@
                     <arguments>-Dmaven.javadoc.skip=true -Dmaven.test.skipTests=true -Dmaven.test.skip=true</arguments>
                 </configuration>
             </plugin>
-            
+
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
@@ -148,6 +148,7 @@
         <module>geoplatform-geotools-dependency</module>
         <module>geoplatform-elasticsearch-dependency</module>
         <module>geoplatform-junit5-dependency</module>
+        <module>geoplatform-gwt-dependency</module>
     </modules>
 
 </project>
