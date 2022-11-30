@@ -125,17 +125,29 @@
             <version>${gt-version}</version>
         </dependency>
 
-          <dependency>
-              <groupId>org.geotools</groupId>
-              <artifactId>gt-gml</artifactId>
-              <version>${gt-gml.version}</version>
-          </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-gml</artifactId>
+          <version>${gt-gml.version}</version>  
+        </dependency>
 
-          <dependency>
-              <groupId>org.geotools</groupId>
-              <artifactId>gt-wfs-ng</artifactId>
-              <version>${gt-version}</version>
-          </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-wfs-ng</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-cql</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.geotools.xsd</groupId>
+            <artifactId>gt-xsd-filter</artifactId>
+            <version>${gt-version}</version>
+        </dependency>
 
           <!--dependency>
               <groupId>org.geotools</groupId>

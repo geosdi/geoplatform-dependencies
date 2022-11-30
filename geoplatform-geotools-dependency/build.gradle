@@ -51,5 +51,6 @@ dependencyManagement {
         dependency 'org.geotools:gt-epsg-wkt:' + gtVersion
         dependency 'org.geotools.xsd:gt-xsd-core:' + gtVersion
         dependency 'org.geotools:gt-jts-wrapper:' + gtVersion
+        dependency 'org.geotools:gt-cql:' + gtVersion
     }
 }
