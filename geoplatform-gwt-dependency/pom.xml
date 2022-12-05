@@ -19,19 +19,19 @@
     <dependencies>
 
       <dependency>
-        <groupId>org.gwtproject</groupId>
+        <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
         <version>${gwt.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.gwtproject</groupId>
+        <groupId>com.google.gwt</groupId>
         <artifactId>gwt-servlet</artifactId>
         <version>${gwt.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.gwtproject</groupId>
+        <groupId>com.google.gwt</groupId>
         <artifactId>gwt-dev</artifactId>
         <version>${gwt.version}</version>
       </dependency>
@@ -44,7 +44,7 @@
       </dependency>
 
       <dependency>
-        <groupId>org.gwtproject.web.bindery</groupId>
+        <groupId>com.google.web.bindery</groupId>
         <artifactId>requestfactory-server</artifactId>
         <version>${gwt.version}</version>
       </dependency>
