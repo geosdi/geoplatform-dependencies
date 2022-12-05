@@ -11,12 +11,7 @@ plugins {
 
 ext {
     gwtVersion = "2.10.0";
-    gxtVersion = "2.3.1a-gwt22";
-    gwtOpenlayersVersion = "1.1-SNAPSHOT";
-    guavaGwtVersion = "31.1-jre";
-    guavaVersion = "31.1-jre";
-    guiceVersion = "5.1.0";
-    ginVersion = "2.1.2";
+    gxtVersion = "2.3.2a-gwt210";
 }
 
 dependencyManagement {
@@ -24,13 +19,6 @@ dependencyManagement {
         dependency 'org.gwtproject:gwt-user:' + gwtVersion
         dependency 'org.gwtproject:gwt-servlet:' + gwtVersion
         dependency 'org.gwtproject:gwt-dev:' + gwtVersion
-        dependency 'org.gwtopenmaps.openlayers:gwt-openlayers-client:' + gwtOpenlayersVersion
-        dependency 'org.gwtopenmaps.openlayers:gwt-openlayers-server:' + gwtOpenlayersVersion
-        dependency 'com.google.guava:guava:' + guavaVersion
-        dependency 'com.google.guava:guava-gwt:' + guavaGwtVersion
         dependency 'com.extjs:gxt:' + gxtVersion
-        dependency 'com.google.gwt.inject:gin:' + ginVersion
-        dependency 'com.google.inject:guice:' + guiceVersion
-        dependency 'com.google.inject.extensions:guice-assistedinject:' + guiceVersion
     }
 }
