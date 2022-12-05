@@ -43,13 +43,18 @@
         <version>${gxt.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.gwtproject.web.bindery</groupId>
+        <artifactId>requestfactory-server</artifactId>
+        <version>${gwt.version}</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
 
   <properties>
-    <gwtVersion>2.10.0</gwtVersion>
-    <gxtVersion>2.3.2a-gwt210</gxtVersion>
+    <gwt.version>2.10.0</gwt.version>
+    <gxt.version>2.3.2a-gwt210</gxt.version>
   </properties>
 
 </project>
