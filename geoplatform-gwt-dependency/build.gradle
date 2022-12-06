@@ -16,10 +16,10 @@ ext {
 
 dependencyManagement {
     dependencies {
-        dependency 'com.google.gwt:gwt-user:' + gwtVersion
-        dependency 'com.google.gwt:gwt-servlet:' + gwtVersion
-        dependency 'com.google.gwt:gwt-dev:' + gwtVersion
+        dependency 'org.gwtproject:gwt-user:' + gwtVersion
+        dependency 'org.gwtproject:gwt-servlet:' + gwtVersion
+        dependency 'org.gwtproject:gwt-dev:' + gwtVersion
         dependency 'com.extjs:gxt:' + gxtVersion
-        dependency 'com.google.web.bindery:requestfactory-server:' + gwtVersion
+        dependency 'org.gwtproject.web.bindery:requestfactory-server:' + gwtVersion
     }
 }
