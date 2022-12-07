@@ -49,6 +49,13 @@
         <version>${gwt.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.extjs</groupId>
+        <artifactId>gxt</artifactId>
+        <classifier>sources</classifier>
+        <version>${gxt.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
