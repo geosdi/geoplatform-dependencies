@@ -53,3 +53,4 @@ geoplatform-geotools-dependency.iml
 /geoplatform-slf4j-dependency/build/
 /geoplatform-spring-dependency/build/
 /geoplatform-swagger-dependency/build/
+GPGenericMapAdapter.java

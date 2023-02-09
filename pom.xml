@@ -149,6 +149,7 @@
         <module>geoplatform-elasticsearch-dependency</module>
         <module>geoplatform-junit5-dependency</module>
         <module>geoplatform-gwt-dependency</module>
+        <module>geoplatform-jakarta-dependency</module>
     </modules>
 
 </project>

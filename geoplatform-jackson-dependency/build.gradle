@@ -28,7 +28,9 @@ dependencyManagement {
         dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:' + jacksonVersion
         dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:' + jacksonVersion
         dependency 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:' + jacksonVersion
         dependency 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:' + jacksonVersion
+        dependency 'com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:' + jacksonVersion
         dependency 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations:' + jacksonVersion
         dependency 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:' + jacksonVersion
         dependency 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:' + jacksonVersion
