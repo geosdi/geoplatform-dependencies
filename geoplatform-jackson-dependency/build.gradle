@@ -10,8 +10,8 @@ plugins {
 }
 
 ext {
-    jacksonVersion = "2.15.0";
-    woodstoxCoreVersion = "6.5.0";
+    jacksonVersion = "2.15.1";
+    woodstoxCoreVersion = "6.5.1";
     aaltoXmlVersion = "1.3.2";
     javaUUIDGeneatorVersion = "4.2.0"
 }
