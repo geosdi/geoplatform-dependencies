@@ -51,5 +51,6 @@ dependencyManagement {
         dependency 'wsdl4j:wsdl4j:1.6.3'
         dependency 'com.sun.xml.fastinfoset:FastInfoset:' + fastInfosetVersion
         dependency 'org.apache.santuario:xmlsec:' + xmlSecVersion
+        dependency 'jakarta.xml.soap:jakarta.xml.soap-api:3.0.0'
     }
 }
