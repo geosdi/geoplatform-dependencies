@@ -60,8 +60,8 @@
   </dependencyManagement>
 
   <properties>
-    <gwt.version>2.10.0</gwt.version>
-    <gxt.version>2.3.2a-gwt210</gxt.version>
+    <gwt.version>2.11.0-jakarta-SNAPSHOT</gwt.version>
+    <gxt.version>2.3.2a-gwt211</gxt.version>
   </properties>
 
 </project>
