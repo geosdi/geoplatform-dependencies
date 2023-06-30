@@ -1,67 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
+    <parent>
+        <groupId>org.geosdi</groupId>
+        <artifactId>geoplatform-dependencies</artifactId>
+        <version>2.1-SNAPSHOT</version>
+    </parent>
+
     <groupId>org.geosdi</groupId>
-    <artifactId>geoplatform-dependencies</artifactId>
+    <artifactId>geoplatform-gwt-dependency</artifactId>
     <version>2.1-SNAPSHOT</version>
-  </parent>
+    <packaging>pom</packaging>
 
-  <groupId>org.geosdi</groupId>
-  <artifactId>geoplatform-gwt-dependency</artifactId>
-  <version>2.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <name>Geo-Platform :: == GWT Dependencies Module</name>
 
-  <name>Geo-Platform :: == GWT Dependencies Module</name>
+    <dependencyManagement>
+        <dependencies>
 
-  <dependencyManagement>
-    <dependencies>
+            <dependency>
+                <groupId>org.gwtproject</groupId>
+                <artifactId>gwt-user</artifactId>
+                <version>${gwt.version}</version>
+            </dependency>
 
-      <dependency>
-        <groupId>org.gwtproject</groupId>
-        <artifactId>gwt-user</artifactId>
-        <version>${gwt.version}</version>
-      </dependency>
+            <dependency>
+                <groupId>org.gwtproject</groupId>
+                <artifactId>gwt-servlet-jakarta</artifactId>
+                <version>${gwt.version}</version>
+            </dependency>
 
-      <dependency>
-        <groupId>org.gwtproject</groupId>
-        <artifactId>gwt-servlet</artifactId>
-        <version>${gwt.version}</version>
-      </dependency>
+            <dependency>
+                <groupId>org.gwtproject</groupId>
+                <artifactId>gwt-dev</artifactId>
+                <version>${gwt.version}</version>
+            </dependency>
 
-      <dependency>
-        <groupId>org.gwtproject</groupId>
-        <artifactId>gwt-dev</artifactId>
-        <version>${gwt.version}</version>
-      </dependency>
+            <!-- GXT -->
+            <dependency>
+                <groupId>com.extjs</groupId>
+                <artifactId>gxt</artifactId>
+                <version>${gxt.version}</version>
+            </dependency>
 
-      <!-- GXT -->
-      <dependency>
-        <groupId>com.extjs</groupId>
-        <artifactId>gxt</artifactId>
-        <version>${gxt.version}</version>
-      </dependency>
+            <dependency>
+                <groupId>org.gwtproject.web.bindery</groupId>
+                <artifactId>requestfactory-server</artifactId>
+                <version>${gwt.version}</version>
+            </dependency>
 
-      <dependency>
-        <groupId>org.gwtproject.web.bindery</groupId>
-        <artifactId>requestfactory-server</artifactId>
-        <version>${gwt.version}</version>
-      </dependency>
+            <dependency>
+                <groupId>com.extjs</groupId>
+                <artifactId>gxt</artifactId>
+                <classifier>sources</classifier>
+                <version>${gxt.version}</version>
+            </dependency>
 
-      <dependency>
-        <groupId>com.extjs</groupId>
-        <artifactId>gxt</artifactId>
-        <classifier>sources</classifier>
-        <version>${gxt.version}</version>
-      </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-    </dependencies>
-  </dependencyManagement>
-
-  <properties>
-    <gwt.version>2.11.0-jakarta-SNAPSHOT</gwt.version>
-    <gxt.version>2.3.2a-gwt211</gxt.version>
-  </properties>
+    <properties>
+        <gwt.version>2.11.0-jakarta-SNAPSHOT</gwt.version>
+        <gxt.version>2.3.2a-gwt211</gxt.version>
+    </properties>
 
 </project>

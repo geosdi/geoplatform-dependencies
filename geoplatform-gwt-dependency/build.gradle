@@ -10,14 +10,14 @@ plugins {
 }
 
 ext {
-    gwtVersion = "2.10.0";
+    gwtVersion = "2.11.0-jakarta-SNAPSHOT";
     gxtVersion = "2.3.2a-gwt210";
 }
 
 dependencyManagement {
     dependencies {
         dependency 'org.gwtproject:gwt-user:' + gwtVersion
-        dependency 'org.gwtproject:gwt-servlet:' + gwtVersion
+        dependency 'org.gwtproject:gwt-servlet-jakarta:' + gwtVersion
         dependency 'org.gwtproject:gwt-dev:' + gwtVersion
         dependency 'com.extjs:gxt:' + gxtVersion
         dependency 'org.gwtproject.web.bindery:requestfactory-server:' + gwtVersion
