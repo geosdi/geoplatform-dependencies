@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    junitEngineVersion = "5.9.1";
+    junitEngineVersion = "5.9.3";
 }
 
 dependencyManagement {
