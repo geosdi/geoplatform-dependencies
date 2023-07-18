@@ -24,5 +24,6 @@ dependencyManagement {
         dependency 'jakarta.xml.ws:jakarta.xml.ws-api:4.0.0'
         dependency 'jakarta.ws.rs:jakarta.ws.rs-api:3.1.0'
         dependency 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+        dependency 'com.sun.xml.ws:jaxws-rt:4.0.1'
     }
 }
