@@ -175,7 +175,7 @@
     </dependencyManagement>
 
     <properties>
-        <spring-version>6.0.13</spring-version>
+        <spring-version>6.1.0</spring-version>
         <spring-support>2.0.8</spring-support>
         <spring-security-version>6.1.5</spring-security-version>
         <spring-batch.version>5.0.3</spring-batch.version>
