@@ -125,7 +125,7 @@
     <properties>
         <jakarta.activation-api.version>2.1.2</jakarta.activation-api.version>
         <jakarta.file-upload.version>2.0.0-SNAPSHOT</jakarta.file-upload.version>
-        <jakarta.mail.version>2.1.2</jakarta.mail.version>
+        <jakarta.mail.version>2.0.1</jakarta.mail.version>
         <jakarta.xml.bind-api.version>4.0.0</jakarta.xml.bind-api.version>
         <jakarta-jaxb-core.version>4.0.4</jakarta-jaxb-core.version>
         <jakarta-jaxb-runtime.version>4.0.4</jakarta-jaxb-runtime.version>
