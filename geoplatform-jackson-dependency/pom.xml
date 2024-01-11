@@ -4,12 +4,12 @@
     <parent>
         <groupId>org.geosdi</groupId>
         <artifactId>geoplatform-dependencies</artifactId>
-        <version>2.0-SNAPSHOT</version>
+        <version>2.0.2-SNAPSHOT</version>
     </parent>
 
     <groupId>org.geosdi</groupId>
     <artifactId>geoplatform-jackson-dependency</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Geo-Platform :: == JACKSON Dependencies Module</name>
@@ -145,10 +145,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson-version>2.15.1</jackson-version> 
+        <jackson-version>2.16.1</jackson-version>
         <woodstox-core.version>6.5.1</woodstox-core.version>
         <aalto-xml.version>1.3.2</aalto-xml.version>
-        <java-uuid-generator.version>4.2.0</java-uuid-generator.version>
+        <java-uuid-generator.version>4.3.0</java-uuid-generator.version>
     </properties>
 
 </project>
