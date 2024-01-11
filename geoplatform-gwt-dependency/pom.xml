@@ -60,7 +60,7 @@
   </dependencyManagement>
 
   <properties>
-    <gwt.version>2.10.0</gwt.version>
+    <gwt.version>2.10.1</gwt.version>
     <gxt.version>2.3.2a-gwt210</gxt.version>
   </properties>
 
