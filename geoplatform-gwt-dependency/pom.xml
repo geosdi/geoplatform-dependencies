@@ -61,7 +61,7 @@
     </dependencyManagement>
 
     <properties>
-        <gwt.version>2.11.0-jakarta-SNAPSHOT</gwt.version>
+        <gwt.version>2.11.0</gwt.version>
         <gxt.version>2.3.2a-gwt211</gxt.version>
     </properties>
 
