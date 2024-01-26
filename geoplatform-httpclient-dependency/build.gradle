@@ -11,7 +11,7 @@ plugins {
 
 ext {
     httpComponentsCore5Version = "5.2.4";
-    httpComponentsClient5Version = "5.2.3";
+    httpComponentsClient5Version = "5.3.1";
     httpComponentsCoreVersion = "4.4.15";
     httpComponentsClientVersion = "4.5.14";
     httpComponentsMimeVersion = "4.5.14";
