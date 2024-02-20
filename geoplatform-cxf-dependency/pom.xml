@@ -231,7 +231,7 @@
         <xmlsec-version>3.0.2</xmlsec-version>
         <wss4j-version>3.0.1</wss4j-version>
         <fastinfoset-version>2.1.0</fastinfoset-version>
-        <cxf-rt-rs-service-description-swagger.version>3.5.5</cxf-rt-rs-service-description-swagger.version>
+        <cxf-rt-rs-service-description-swagger.version>3.6.2</cxf-rt-rs-service-description-swagger.version>
     </properties>
 
 </project>
