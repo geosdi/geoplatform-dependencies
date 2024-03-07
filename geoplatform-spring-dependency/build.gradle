@@ -29,6 +29,8 @@ ext {
     springSupportVersion = "2.0.8";
     springSecurityVersion = "6.2.2";
     springBatchVersion = "5.1.0";
+    springOpenApiVersion = "2.3.0";
+    springBootVersion = "3.2.3";
 }
 
 dependencyManagement {
@@ -57,5 +59,13 @@ dependencyManagement {
         dependency 'org.springframework.security:spring-security-taglibs:' + springSecurityVersion
         dependency 'org.springframework.security:spring-security-acl:' + springSecurityVersion
         dependency 'org.springframework.batch:spring-batch-core:' + springBatchVersion
+        dependency 'org.springdoc:springdoc-openapi-starter-webmvc-ui:' + springOpenApiVersion
+        dependency 'org.springframework.boot:spring-boot-starter:' + springBootVersion
+        dependency 'org.springframework.boot:spring-boot-starter-web:' + springBootVersion
+        dependency 'org.springframework.boot:spring-boot-starter-test:' + springBootVersion
     }
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:' + springBootVersion
 }
