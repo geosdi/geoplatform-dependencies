@@ -10,12 +10,16 @@ plugins {
 }
 
 ext {
-    junitEngineVersion = "5.10.1";
+    junitEngineVersion = "5.10.2";
+    junitPlatformVersion = "1.10.2";
 }
 
 dependencyManagement {
     dependencies {
         dependency 'org.junit.jupiter:junit-jupiter-engine:' + junitEngineVersion
         dependency 'org.junit.vintage:junit-vintage-engine:' + junitEngineVersion
+        dependency 'org.junit.jupiter:junit-jupiter:' + junitEngineVersion
+        dependency 'org.junit.platform:junit-platform-launcher:' + junitPlatformVersion
+        dependency 'org.junit.platform:junit-platform-runner:' + junitPlatformVersion
     }
 }
