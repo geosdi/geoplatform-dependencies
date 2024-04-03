@@ -62,6 +62,8 @@ dependencyManagement {
         dependency 'org.springdoc:springdoc-openapi-starter-webmvc-ui:' + springOpenApiVersion
         dependency 'org.springframework.boot:spring-boot-starter:' + springBootVersion
         dependency 'org.springframework.boot:spring-boot-starter-web:' + springBootVersion
+        dependency 'org.springframework.boot:spring-boot-starter-cache:' + springBootVersion
+        dependency 'org.springframework.boot:spring-boot-starter-data-redis:' + springBootVersion
         dependency 'org.springframework.boot:spring-boot-starter-test:' + springBootVersion
     }
 }
