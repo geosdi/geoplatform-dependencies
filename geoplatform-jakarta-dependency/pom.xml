@@ -135,6 +135,6 @@
         <jakarta.jws-api.version>3.0.0</jakarta.jws-api.version>
         <jakarta.ws.rs-api.version>4.0.0</jakarta.ws.rs-api.version>
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
-        <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version>
     </properties>
 </project>
