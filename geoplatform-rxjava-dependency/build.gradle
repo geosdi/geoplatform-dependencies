@@ -11,7 +11,7 @@ plugins {
 
 ext {
     rxjava2Version = "2.2.21";
-    rxjava3Version = "3.1.8";
+    rxjava3Version = "3.1.9";
 }
 
 dependencyManagement {
