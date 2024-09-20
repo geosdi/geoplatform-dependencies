@@ -75,7 +75,7 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.5.6</version>
+                <version>1.5.8</version>
             </dependency>
 
             <dependency>
@@ -87,7 +87,7 @@
     </dependencyManagement>
 
     <properties>
-        <slf4j-version>2.0.14</slf4j-version>
+        <slf4j-version>2.0.16</slf4j-version>
     </properties>
 
 </project>
