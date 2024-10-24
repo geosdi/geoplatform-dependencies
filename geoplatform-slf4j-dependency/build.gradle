@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    sl4jVersion = "2.0.14";
+    sl4jVersion = "1.7.36";
 }
 
 dependencyManagement {
