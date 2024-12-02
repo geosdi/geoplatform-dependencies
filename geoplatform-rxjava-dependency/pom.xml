@@ -40,7 +40,7 @@
     
     <properties>
         <rxjava2.version>2.2.21</rxjava2.version>
-        <rxjava3.version>3.1.9</rxjava3.version>
+        <rxjava3.version>3.1.10</rxjava3.version>
     </properties>
 
 </project>
