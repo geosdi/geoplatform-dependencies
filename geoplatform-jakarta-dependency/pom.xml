@@ -19,7 +19,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.apache.commons</groupId>
-                <artifactId>commons-fileupload2-jakarta</artifactId>
+                <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
                 <version>${jakarta.file-upload.version}</version>
             </dependency>
 
@@ -124,7 +124,7 @@
 
     <properties>
         <jakarta.activation-api.version>2.1.3</jakarta.activation-api.version>
-        <jakarta.file-upload.version>2.0.0-SNAPSHOT</jakarta.file-upload.version>
+        <jakarta.file-upload.version>2.0.0-M2</jakarta.file-upload.version>
         <jakarta.mail.version>2.0.1</jakarta.mail.version>
         <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
         <jakarta-jaxb-core.version>4.0.5</jakarta-jaxb-core.version>
