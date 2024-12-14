@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    cxfVersion = "4.0.6";
+    cxfVersion = "4.1.0";
     wss4jVersion = "3.0.4";
     xmlSecVersion = "3.0.5";
     fastInfosetVersion = "2.1.1";
@@ -52,6 +52,6 @@ dependencyManagement {
         dependency 'wsdl4j:wsdl4j:1.6.3'
         dependency 'com.sun.xml.fastinfoset:FastInfoset:' + fastInfosetVersion
         dependency 'org.apache.santuario:xmlsec:' + xmlSecVersion
-        dependency 'jakarta.xml.soap:jakarta.xml.soap-api:3.0.0'
+        dependency 'jakarta.xml.soap:jakarta.xml.soap-api:3.0.2'
     }
 }
