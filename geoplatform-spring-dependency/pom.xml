@@ -217,9 +217,9 @@
         <spring-version>6.2.1</spring-version>
         <spring-support>2.0.8</spring-support>
         <spring-security-version>6.4.2</spring-security-version>
-        <spring-batch.version>5.2.0</spring-batch.version>
-        <springdoc-openapi.version>2.6.0</springdoc-openapi.version>
-        <spring-boot.version>3.4.0</spring-boot.version>
+        <spring-batch.version>5.2.1</spring-batch.version>
+        <springdoc-openapi.version>2.7.0</springdoc-openapi.version>
+        <spring-boot.version>3.4.1</spring-boot.version>
     </properties>
 
 </project>
