@@ -18,7 +18,7 @@ dependencyManagement {
         dependency 'org.glassfish.jaxb:jaxb-core:4.0.5'
         dependency 'org.glassfish.jaxb:jaxb-runtime:4.0.5'
         dependency 'jakarta.annotation:jakarta.annotation-api:3.0.0'
-        dependency 'jakarta.persistence:jakarta.persistence-api:3.2.0'
+        dependency 'jakarta.persistence:jakarta.persistence-api:3.1.0'
         dependency 'jakarta.validation:jakarta.validation-api:3.1.1'
         dependency 'jakarta.jws:jakarta.jws-api:3.0.0'
         dependency 'jakarta.xml.ws:jakarta.xml.ws-api:4.0.2'
