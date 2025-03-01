@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    sl4jVersion = "2.0.16";
+    sl4jVersion = "2.0.17";
 }
 
 dependencyManagement {
@@ -22,7 +22,7 @@ dependencyManagement {
         dependency 'org.slf4j:slf4j-nop:' + sl4jVersion
         dependency 'org.slf4j:slf4j-simple:' + sl4jVersion
         dependency 'org.slf4j:slf4j-log4j12:' + sl4jVersion
-        dependency 'ch.qos.logback:logback-classic:1.5.16'
+        dependency 'ch.qos.logback:logback-classic:1.5.17'
         dependency 'org.apache.logging.log4j:log4j-slf4j-impl:2.24.3'
     }
 }
