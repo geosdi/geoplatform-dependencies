@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    elastiSearchVersion = "7.17.14";
+    elastiSearchVersion = "7.17.28";
     spatial4jVersion = "0.8";
 }
 
