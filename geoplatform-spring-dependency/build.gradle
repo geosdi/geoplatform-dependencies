@@ -29,8 +29,8 @@ ext {
     springSupportVersion = "2.0.8";
     springSecurityVersion = "6.5.0";
     springBatchVersion = "5.2.2";
-    springOpenApiVersion = "2.8.5";
-    springBootVersion = "3.4.5";
+    springOpenApiVersion = "2.8.8";
+    springBootVersion = "3.4.6";
 }
 
 dependencyManagement {
