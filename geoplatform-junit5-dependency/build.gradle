@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    junitEngineVersion = "5.12.2";
+    junitEngineVersion = "5.13.0";
     junitPlatformVersion = "1.12.2";
 }
 
