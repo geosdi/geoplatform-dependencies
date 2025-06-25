@@ -30,7 +30,7 @@ ext {
     springSecurityVersion = "6.5.1";
     springBatchVersion = "5.2.2";
     springOpenApiVersion = "2.8.8";
-    springBootVersion = "3.5.2";
+    springBootVersion = "3.5.3";
 }
 
 dependencyManagement {
