@@ -25,6 +25,6 @@ dependencyManagement {
         dependency 'jakarta.ws.rs:jakarta.ws.rs-api:4.0.0'
         dependency 'jakarta.servlet:jakarta.servlet-api:6.1.0'
         dependency 'com.sun.xml.ws:jaxws-rt:4.0.1'
-        dependency 'org.apache.commons:commons-fileupload2-jakarta-servlet6:2.0.0-M2'
+        dependency 'org.apache.commons:commons-fileupload2-jakarta-servlet6:2.0.0-M4'
     }
 }
