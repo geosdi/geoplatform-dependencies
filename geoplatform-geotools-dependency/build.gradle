@@ -43,6 +43,7 @@ dependencyManagement {
         dependency 'org.geotools:gt-geotiff:' + gtVersion
         dependency 'org.geotools.xsd:gt-xsd-sld:' + gtVersion
         dependency 'org.geotools:gt-xml:' + gtVersion
+        dependency 'org.geotools:gt-coverage:' + gtVersion
         dependency('org.geotools:gt-coveragetools:' + gtCoverageToolsVersion) {
             exclude 'net.sf.ehcache:ehcache'
         }
