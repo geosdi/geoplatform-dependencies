@@ -10,11 +10,11 @@ plugins {
 }
 
 ext {
-    cxfVersion = "4.1.3";
-    wss4jVersion = "4.0.0";
-    xmlSecVersion = "4.0.3";
+    cxfVersion = "4.1.4";
+    wss4jVersion = "4.0.1";
+    xmlSecVersion = "4.0.4";
     fastInfosetVersion = "2.1.1";
-    cxfServiceDescriptionSwaggerVersion = "3.6.8";
+    cxfServiceDescriptionSwaggerVersion = "3.6.9";
 }
 
 dependencyManagement {
