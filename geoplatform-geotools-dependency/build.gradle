@@ -25,7 +25,7 @@ repositories {
 }
 
 ext {
-    gtVersion = "35.0";
+    gtVersion = "35.1";
     gtCoverageToolsVersion = "15.4";
     gtApiVersion = "20.5";
 }
