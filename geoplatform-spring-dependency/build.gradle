@@ -66,17 +66,6 @@ dependencyManagement {
         dependency 'org.springframework.boot:spring-boot-starter-cache:' + springBootVersion
         dependency 'org.springframework.boot:spring-boot-starter-data-redis:' + springBootVersion
         dependency 'org.springframework.boot:spring-boot-starter-test:' + springBootVersion
-
-        // springdoc-openapi is built against an older Spring Boot train and
-        // propagates these modules transitively. Without an explicit version
-        // Maven mediation can mix two Boot releases on the same classpath.
-        dependencySet(group: 'org.springframework.boot', version: springBootVersion) {
-            entry 'spring-boot-autoconfigure'
-            entry 'spring-boot-jackson'
-            entry 'spring-boot-validation'
-            entry 'spring-boot-web-server'
-            entry 'spring-boot-webmvc'
-        }
     }
 }
 

@@ -215,44 +215,6 @@
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
             </dependency>
-
-            <!-- =========================================================== -->
-            <!-- ============= SPRING BOOT GRANULAR MODULES ================ -->
-            <!-- springdoc-openapi is built against an older Spring Boot     -->
-            <!-- train and propagates these modules transitively (compile    -->
-            <!-- scope, non optional). Without an explicit version here      -->
-            <!-- Maven mediation can pick springdoc's older copy and mix     -->
-            <!-- two Boot releases on the same classpath: that is how        -->
-            <!-- spring-boot-web-server ended up at 4.0.5 next to a 4.1.1    -->
-            <!-- spring-boot-tomcat, failing with NoClassDefFoundError on    -->
-            <!-- AbstractConfigurableWebServerFactory$TempDirs.              -->
-            <!-- Keep in sync with springdoc's spring-boot dependencies.     -->
-            <!-- =========================================================== -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-jackson</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-validation</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-web-server</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-webmvc</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
