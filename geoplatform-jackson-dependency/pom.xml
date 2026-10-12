@@ -152,6 +152,15 @@
                 <artifactId>jtoon</artifactId>
                 <version>${jtoon.version}</version>
             </dependency>
+
+            <!-- Jackson 2.x still reaches us transitively (e.g. swagger-jaxrs, opensaml) -->
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson2-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -163,6 +172,7 @@
         <aalto-xml.version>1.4.0</aalto-xml.version>
         <java-uuid-generator.version>5.2.0</java-uuid-generator.version>
         <jtoon.version>2.0.5</jtoon.version>
+        <jackson2-version>2.22.3</jackson2-version>
     </properties>
 
 </project>

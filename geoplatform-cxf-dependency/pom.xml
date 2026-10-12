@@ -222,7 +222,26 @@
                 <artifactId>jakarta.xml.soap-api</artifactId>
                 <version>3.0.2</version>
             </dependency>
-            
+
+            <!-- Bouncy Castle comes from wss4j through cryptacular -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>${bouncycastle-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk18on</artifactId>
+                <version>${bouncycastle-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcutil-jdk18on</artifactId>
+                <version>${bouncycastle-version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     
@@ -232,6 +251,7 @@
         <wss4j-version>4.0.1</wss4j-version>
         <fastinfoset-version>2.1.1</fastinfoset-version>
         <cxf-rt-rs-service-description-swagger.version>3.6.11</cxf-rt-rs-service-description-swagger.version>
+        <bouncycastle-version>1.86</bouncycastle-version>
     </properties>
 
 </project>

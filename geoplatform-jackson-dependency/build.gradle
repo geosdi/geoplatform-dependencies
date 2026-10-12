@@ -16,9 +16,13 @@ ext {
     aaltoXmlVersion = "1.4.0";
     javaUUIDGeneatorVersion = "5.2.0"
     jtoonVersion = "2.0.5"
+    jackson2Version = "2.22.3"
 }
 
 dependencyManagement {
+    imports {
+        mavenBom 'com.fasterxml.jackson:jackson-bom:' + jackson2Version
+    }
     dependencies {
         dependency 'tools.jackson.core:jackson-core:' + jacksonVersion
         dependency 'tools.jackson.core:jackson-annotations:' + jacksonAnnotationsVersion
