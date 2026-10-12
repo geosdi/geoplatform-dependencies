@@ -54,3 +54,6 @@ geoplatform-geotools-dependency.iml
 /geoplatform-spring-dependency/build/
 /geoplatform-swagger-dependency/build/
 GPGenericMapAdapter.java
+
+# Gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar

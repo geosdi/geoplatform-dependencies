@@ -79,11 +79,12 @@ allprojects {
         }
         repositories {
             maven {
-                name 'geosdi-repository'
+                name = 'geosdi-repository'
                 url = version.endsWith('SNAPSHOT') ? geosdi_snapshot_repository : geosdi_release_repository
                 credentials {
-                    username = geosdi_repo_username
-                    password = geosdi_repo_password
+                    // only publish needs them: a plain build must work without
+                    username = findProperty('geosdi_repo_username')
+                    password = findProperty('geosdi_repo_password')
                 }
             }
         }
