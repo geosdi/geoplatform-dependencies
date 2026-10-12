@@ -10,8 +10,10 @@ plugins {
 }
 
 ext {
-    gwtVersion = "2.11.0";
+    gwtVersion = "2.13.1";
     gxtVersion = "2.3.2a-gwt210";
+    restyGwtVersion = "2.2.7";
+    gwtJacksonVersion = "0.15.4";
 }
 
 dependencyManagement {
@@ -21,5 +23,7 @@ dependencyManagement {
         dependency 'org.gwtproject:gwt-dev:' + gwtVersion
         dependency 'com.extjs:gxt:' + gxtVersion
         dependency 'org.gwtproject.web.bindery:requestfactory-server:' + gwtVersion
+        dependency 'org.fusesource.restygwt:restygwt:' + restyGwtVersion
+        dependency 'com.github.nmorel.gwtjackson:gwt-jackson:' + gwtJacksonVersion
     }
 }

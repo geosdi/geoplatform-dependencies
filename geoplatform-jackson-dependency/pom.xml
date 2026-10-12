@@ -153,6 +153,14 @@
                 <version>${jtoon.version}</version>
             </dependency>
 
+            <!-- GWT compiles a few annotations from it (gwt-jackson, restygwt); the bom below does not cover classifiers -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson2-version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+
             <!-- Jackson 2.x still reaches us transitively (e.g. swagger-jaxrs, opensaml) -->
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
