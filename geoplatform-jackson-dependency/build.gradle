@@ -15,7 +15,7 @@ ext {
     woodstoxCoreVersion = "7.3.0";
     aaltoXmlVersion = "1.4.0";
     javaUUIDGeneatorVersion = "5.2.0"
-    jtoonVersion = "2.0.5"
+    jtoonVersion = "3.0.0"
     jackson2Version = "2.22.3"
 }
 
