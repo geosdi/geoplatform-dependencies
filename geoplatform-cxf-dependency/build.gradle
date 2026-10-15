@@ -10,11 +10,11 @@ plugins {
 }
 
 ext {
-    cxfVersion = "4.2.3";
-    wss4jVersion = "4.0.1";
+    cxfVersion = "4.2.4";
+    wss4jVersion = "4.0.2";
     xmlSecVersion = "4.0.4";
     fastInfosetVersion = "2.1.1";
-    cxfServiceDescriptionSwaggerVersion = "3.6.11";
+    cxfServiceDescriptionSwaggerVersion = "3.6.13";
     bouncyCastleVersion = "1.86";
 }
 
@@ -28,6 +28,7 @@ dependencyManagement {
         dependency 'org.apache.cxf:cxf-rt-wsdl:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-rs-service-description-swagger:' + cxfServiceDescriptionSwaggerVersion
         dependency 'org.apache.cxf:cxf-rt-rs-service-description-microprofile-openapi:' + cxfVersion
+        dependency 'org.apache.cxf:cxf-rt-rs-service-description-openapi-v3:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-transports-http-hc:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-frontend-simple:' + cxfVersion
         dependency('org.apache.cxf:cxf-rt-frontend-jaxws:' + cxfVersion) {
@@ -47,7 +48,7 @@ dependencyManagement {
         dependency 'org.apache.cxf:cxf-spring-boot-starter-jaxrs:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-features-logging:' + cxfVersion
         dependency 'org.apache.cxf:cxf-rt-features-metrics:' + cxfVersion
-        dependency 'org.apache.ws.xmlschema:xmlschema-core:2.3.0'
+        dependency 'org.apache.ws.xmlschema:xmlschema-core:2.3.3'
         dependency 'org.apache.wss4j:wss4j-ws-security-common:' + wss4jVersion
         dependency 'org.apache.wss4j:wss4j-ws-security-dom:' + wss4jVersion
         dependency 'wsdl4j:wsdl4j:1.6.3'
