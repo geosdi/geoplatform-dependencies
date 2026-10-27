@@ -219,12 +219,12 @@
     </dependencyManagement>
 
     <properties>
-        <spring-version>7.0.9</spring-version>
+        <spring-version>7.0.10</spring-version>
         <spring-support>2.0.8</spring-support>
-        <spring-security-version>7.1.1</spring-security-version>
-        <spring-batch.version>6.0.5</spring-batch.version>
-        <springdoc-openapi.version>3.1.1</springdoc-openapi.version>
-        <spring-boot.version>4.1.1</spring-boot.version>
+        <spring-security-version>7.1.2</spring-security-version>
+        <spring-batch.version>6.0.6</spring-batch.version>
+        <springdoc-openapi.version>3.2.0</springdoc-openapi.version>
+        <spring-boot.version>4.1.2</spring-boot.version>
     </properties>
 
 </project>
