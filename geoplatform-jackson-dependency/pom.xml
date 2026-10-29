@@ -174,13 +174,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson-version>3.2.3</jackson-version>
+        <jackson-version>3.2.4</jackson-version>
         <jackson-annotations-version>2.22</jackson-annotations-version>
         <woodstox-core.version>7.3.0</woodstox-core.version>
         <aalto-xml.version>1.4.0</aalto-xml.version>
         <java-uuid-generator.version>5.2.0</java-uuid-generator.version>
         <jtoon.version>3.0.0</jtoon.version>
-        <jackson2-version>2.22.3</jackson2-version>
+        <jackson2-version>2.22.4</jackson2-version>
     </properties>
 
 </project>
