@@ -41,11 +41,6 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-jmx</artifactId>
-                <version>${spring-support}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
                 <version>${spring-version}</version>
             </dependency>
@@ -220,7 +215,6 @@
 
     <properties>
         <spring-version>7.0.10</spring-version>
-        <spring-support>2.0.8</spring-support>
         <spring-security-version>7.1.2</spring-security-version>
         <spring-batch.version>6.0.6</spring-batch.version>
         <springdoc-openapi.version>3.2.0</springdoc-openapi.version>
