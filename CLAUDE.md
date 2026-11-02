@@ -9,6 +9,11 @@ Hibernate Validator, CXF, ...). La build esiste sia con Maven (`pom.xml`) sia co
 - `upstream`: `geosdi/geoplatform-dependencies`, il progetto del gruppo.
 - `origin`: il fork personale.
 
+## Commit
+
+- Nei messaggi di commit e nelle descrizioni delle PR non citare mai Claude: niente riga
+  `Co-Authored-By: Claude ...` né "Generated with Claude Code".
+
 ## Parametri per i plugin geosdi
 
 - `notifiche-remote`: `upstream`
