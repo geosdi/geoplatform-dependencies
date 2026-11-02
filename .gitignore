@@ -29,7 +29,6 @@ hs_err_pid*
 /geoplatform-jackson-dependency/geoplatform-jackson-dependency.iml
 /geoplatform-httpclient-dependency/geoplatform-httpclient-dependency.iml
 /geoplatform-hibernate-validator-dependency/geoplatform-hibernate-validator-dependency.iml
-/geoplatform-dropwizard-dependency/geoplatform-dropwizard-dependency.iml
 /geoplatform-cxf-dependency/geoplatform-cxf-dependency.iml
 /geoplatform-hibernate-validator-dependency/.idea/
 /geoplatform-cxf-dependency/.idea/
@@ -41,7 +40,6 @@ geoplatform-geotools-dependency.iml
 /.gradle/
 /build/
 /geoplatform-cxf-dependency/build/
-/geoplatform-dropwizard-dependency/build/
 /geoplatform-elasticsearch-dependency/build/
 /geoplatform-geotools-dependency/build/
 /geoplatform-hibernate-validator-dependency/build/

@@ -142,7 +142,6 @@
         <module>geoplatform-spring-dependency</module>
         <module>geoplatform-cxf-dependency</module>
         <module>geoplatform-jackson-dependency</module>
-        <module>geoplatform-dropwizard-dependency</module>
         <module>geoplatform-swagger-dependency</module>
         <module>geoplatform-httpclient-dependency</module>
         <module>geoplatform-hibernate-validator-dependency</module>

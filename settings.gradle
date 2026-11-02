@@ -14,7 +14,6 @@ pluginManagement {
 }
 
 rootProject.name = 'geoplatform-dependencies'
-include(':geoplatform-dropwizard-dependency')
 include(':geoplatform-cxf-dependency')
 include(':geoplatform-junit5-dependency')
 include(':geoplatform-geotools-dependency')
