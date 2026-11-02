@@ -36,12 +36,6 @@
             </dependency>
 
             <dependency>
-                <groupId>tools.jackson.datatype</groupId>
-                <artifactId>jackson-datatype-jdk8</artifactId>
-                <version>${jackson-version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>tools.jackson.module</groupId>
                 <artifactId>jackson-module-mrbean</artifactId>
                 <version>${jackson-version}</version>
@@ -68,12 +62,6 @@
             <dependency>
                 <groupId>tools.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-guava</artifactId>
-                <version>${jackson-version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>tools.jackson.datatype</groupId>
-                <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>${jackson-version}</version>
             </dependency>
 

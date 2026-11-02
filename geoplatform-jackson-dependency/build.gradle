@@ -40,8 +40,6 @@ dependencyManagement {
         dependency 'tools.jackson.jaxrs:jackson-jaxrs-json-provider:' + jacksonVersion
         dependency 'tools.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:' + jacksonVersion
         dependency 'tools.jackson.module:jackson-module-jaxb-annotations:' + jacksonVersion
-        dependency 'tools.jackson.datatype:jackson-datatype-jdk8:' + jacksonVersion
-        dependency 'tools.jackson.datatype:jackson-datatype-jsr310:' + jacksonVersion
         dependency 'com.fasterxml.woodstox:woodstox-core:' + woodstoxCoreVersion
         dependency 'com.fasterxml:aalto-xml:' + aaltoXmlVersion
         dependency 'com.fasterxml.uuid:java-uuid-generator:' + javaUUIDGeneatorVersion

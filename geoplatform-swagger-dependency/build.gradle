@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    swaggerVersion = "1.5.20";
+    swaggerVersion = "1.6.16";
 }
 
 dependencyManagement {

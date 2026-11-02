@@ -20,6 +20,5 @@ dependencyManagement {
         dependency 'org.junit.vintage:junit-vintage-engine:' + junitEngineVersion
         dependency 'org.junit.jupiter:junit-jupiter:' + junitEngineVersion
         dependency 'org.junit.platform:junit-platform-launcher:' + junitPlatformVersion
-        dependency 'org.junit.platform:junit-platform-runner:' + junitPlatformVersion
     }
 }
