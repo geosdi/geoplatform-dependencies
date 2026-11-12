@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.geosdi</groupId>
+        <artifactId>geoplatform-dependencies</artifactId>
+        <version>2.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.geosdi</groupId>
+    <artifactId>geoplatform-elasticsearch9-dependency</artifactId>
+    <version>2.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Geo-Platform :: == ElasticSearch 9 Dependencies Module</name>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- =========================================================== -->
+            <!-- ================ ELASTIC SEARCH JAVA CLIENT =============== -->
+            <!-- =========================================================== -->
+            <!-- Il client porta sia Jackson 2 sia Jackson 3 a runtime: geo-platform usa Jackson 3
+                 (Jackson3JsonpMapper), che di Jackson 2 usa solo jackson-annotations. -->
+            <dependency>
+                <groupId>co.elastic.clients</groupId>
+                <artifactId>elasticsearch-java</artifactId>
+                <version>${elasticsearch9.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-databind</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>co.elastic.clients</groupId>
+                <artifactId>elasticsearch-rest5-client</artifactId>
+                <version>${elasticsearch9.version}</version>
+            </dependency>
+
+            <!-- =========================================================== -->
+            <!-- ======================= TESTCONTAINERS ==================== -->
+            <!-- =========================================================== -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-elasticsearch</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-junit-jupiter</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <elasticsearch9.version>9.5.6</elasticsearch9.version>
+        <testcontainers.version>2.0.5</testcontainers.version>
+    </properties>
+</project>
