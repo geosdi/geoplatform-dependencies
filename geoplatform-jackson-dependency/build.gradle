@@ -10,13 +10,13 @@ plugins {
 }
 
 ext {
-    jacksonVersion = "3.2.4";
-    jacksonAnnotationsVersion = "2.22";
+    jacksonVersion = "3.3.0";
+    jacksonAnnotationsVersion = "2.23";
     woodstoxCoreVersion = "7.3.0";
     aaltoXmlVersion = "1.4.0";
     javaUUIDGeneatorVersion = "5.2.0"
     jtoonVersion = "3.0.0"
-    jackson2Version = "2.22.4"
+    jackson2Version = "2.23.0"
 }
 
 dependencyManagement {
@@ -25,11 +25,11 @@ dependencyManagement {
     }
     dependencies {
         dependency 'tools.jackson.core:jackson-core:' + jacksonVersion
-        dependency 'tools.jackson.core:jackson-annotations:' + jacksonAnnotationsVersion
+        dependency 'com.fasterxml.jackson.core:jackson-annotations:' + jacksonAnnotationsVersion
         dependency 'tools.jackson.core:jackson-databind:' + jacksonVersion
         dependency 'tools.jackson.module:jackson-module-mrbean:' + jacksonVersion
         dependency 'tools.jackson.module:jackson-module-afterburner:' + jacksonVersion
-        dependency 'tools.jackson.module:jackson-module-afterburner:' + jacksonVersion
+        dependency 'tools.jackson.module:jackson-module-blackbird:' + jacksonVersion
         dependency 'tools.jackson.datatype:jackson-datatype-joda:' + jacksonVersion
         dependency 'tools.jackson.datatype:jackson-datatype-guava:' + jacksonVersion
         dependency 'tools.jackson.dataformat:jackson-dataformat-yaml:' + jacksonVersion

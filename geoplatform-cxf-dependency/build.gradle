@@ -15,7 +15,7 @@ ext {
     xmlSecVersion = "4.0.4";
     fastInfosetVersion = "2.1.1";
     cxfServiceDescriptionSwaggerVersion = "3.6.13";
-    bouncyCastleVersion = "1.86";
+    bouncyCastleVersion = "1.87";
 }
 
 dependencyManagement {
