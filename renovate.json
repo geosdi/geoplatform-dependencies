@@ -1,0 +1,106 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Aggiornamenti delle versioni (CLAUDE.md, «Aggiornamenti delle versioni»). Gira dal workflow renovate il 1° e il 15 del mese: una pull request per modulo, con pom.xml e build.gradle aggiornati insieme (le due build restano allineate) e la build Maven e Gradle del workflow build. Merge a mano dopo la lettura delle note. Le major solo dopo la spunta nel Dependency Dashboard.",
+  "extends": ["config:recommended"],
+  "timezone": "Europe/Rome",
+  "minimumReleaseAge": "14 days",
+  "internalChecksFilter": "strict",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 20,
+  "labels": ["renovate"],
+  "dependencyDashboardTitle": "Aggiornamenti delle versioni (Renovate)",
+  "commitMessageAction": "Aggiorna",
+  "rangeStrategy": "bump",
+  "enabledManagers": ["maven", "gradle", "gradle-wrapper", "github-actions"],
+  "major": { "dependencyDashboardApproval": true },
+  "packageRules": [
+    {
+      "description": "Un gruppo per modulo: la stessa libreria sta nel pom.xml e nel build.gradle del modulo, e nello stesso gruppo finisce nella stessa pull request, così Maven e Gradle restano allineati. Spring tiene insieme Framework, Boot, Security, Batch e springdoc, che si alzano insieme.",
+      "matchFileNames": ["geoplatform-spring-dependency/**"],
+      "groupName": "Spring"
+    },
+    {
+      "matchFileNames": ["geoplatform-cxf-dependency/**"],
+      "groupName": "CXF"
+    },
+    {
+      "matchFileNames": ["geoplatform-elasticsearch-dependency/**"],
+      "groupName": "Elasticsearch"
+    },
+    {
+      "matchFileNames": ["geoplatform-geotools-dependency/**"],
+      "groupName": "GeoTools"
+    },
+    {
+      "matchFileNames": ["geoplatform-gwt-dependency/**"],
+      "groupName": "GWT"
+    },
+    {
+      "matchFileNames": ["geoplatform-hibernate-validator-dependency/**"],
+      "groupName": "Hibernate Validator"
+    },
+    {
+      "matchFileNames": ["geoplatform-httpclient-dependency/**"],
+      "groupName": "HttpComponents"
+    },
+    {
+      "matchFileNames": ["geoplatform-jackson-dependency/**"],
+      "groupName": "Jackson"
+    },
+    {
+      "matchFileNames": ["geoplatform-jakarta-dependency/**"],
+      "groupName": "Jakarta"
+    },
+    {
+      "matchFileNames": ["geoplatform-junit5-dependency/**"],
+      "groupName": "JUnit"
+    },
+    {
+      "matchFileNames": ["geoplatform-lombok-dependency/**"],
+      "groupName": "Lombok"
+    },
+    {
+      "matchFileNames": ["geoplatform-rxjava-dependency/**"],
+      "groupName": "RxJava"
+    },
+    {
+      "matchFileNames": ["geoplatform-slf4j-dependency/**"],
+      "groupName": "SLF4J"
+    },
+    {
+      "matchFileNames": ["geoplatform-swagger-dependency/**"],
+      "groupName": "Swagger"
+    },
+    {
+      "description": "Build: plugin ed estensioni Maven (depType build), plugin Gradle (depType plugin, come io.spring.dependency-management in gradle.properties) e versione di Gradle del wrapper, in un gruppo a sé. Cambiano la build e non le versioni pubblicate nei BOM: se la build fallisce si sa dove guardare. Viene dopo i moduli perché vince l'ultima regola.",
+      "matchManagers": ["maven"],
+      "matchDepTypes": ["build"],
+      "groupName": "build"
+    },
+    {
+      "matchManagers": ["gradle"],
+      "matchDepTypes": ["plugin"],
+      "groupName": "build"
+    },
+    {
+      "matchManagers": ["gradle-wrapper"],
+      "groupName": "build"
+    },
+    {
+      "description": "Elasticsearch: il passaggio da 7 a 9 si fa a mano sul ramo elasticsearch-9; Renovate propone solo minor e patch della linea in uso",
+      "matchPackageNames": ["org.elasticsearch:**", "co.elastic.clients:**"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "description": "Sostituzioni di artifact (preset replacements di config:recommended, es. slf4j-log4j12 → slf4j-reload4j): Renovate le fa nel pom.xml ma non nel build.gradle, dove l'artifact è concatenato a una variabile, e le due build si disallineerebbero. Si decidono a mano, in tutte e due.",
+      "matchUpdateTypes": ["replacement"],
+      "enabled": false
+    },
+    {
+      "description": "Action dei workflow (e versione di Renovate del workflow renovate): un gruppo",
+      "matchManagers": ["github-actions"],
+      "groupName": "pipeline"
+    }
+  ]
+}

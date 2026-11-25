@@ -1,0 +1,34 @@
+# Renovate (renovate.json): una pull request per modulo con le versioni nuove, pom.xml e build.gradle insieme;
+# le major solo dopo la spunta nel Dependency Dashboard. Il merge resta a mano, dopo la build della pull
+# request (workflow build) e la lettura delle note.
+# RENOVATE_TOKEN: token fine-grained del bot, segreto del repository; scade.
+# Per lanciarlo subito: Actions → renovate → Run workflow.
+name: renovate
+
+on:
+  schedule:
+    # cron in UTC: alle 6 (ora di Roma, inverno) del 1° e del 15 del mese
+    - cron: "0 5 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  renovate:
+    # solo sul progetto del gruppo: nei fork il file arriva con il codice ma il segreto non c'è
+    if: github.repository == 'geosdi/geoplatform-dependencies'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: renovatebot/github-action@ebcbb513d07ead4d9c0c2139064301db05e84a3e # v46.3.15
+        with:
+          token: ${{ secrets.RENOVATE_TOKEN }}
+          # immagine «full» (Java, Maven, Gradle già dentro)
+          renovate-version: "44.256.1-full"
+        env:
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
+          RENOVATE_ONBOARDING: "false"
+          RENOVATE_REQUIRE_CONFIG: required
+          RENOVATE_BINARY_SOURCE: global
+          LOG_LEVEL: info
