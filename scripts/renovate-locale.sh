@@ -8,9 +8,12 @@
 #   prova (default)  dry run: dice quali rami e pull request creerebbe, senza scrivere niente su GitHub
 #   vai              crea davvero rami, pull request (verso il ramo base) e Dependency Dashboard
 #
+# Con SALVA_LOG=<file> il log completo di Renovate resta in quel file.
+#
 # Il token è quello del login di gh (gh auth token, scope repo e workflow): pull request e dashboard
 # risultano aperti dall'utente di gh. Il token passa a Docker per variabile d'ambiente, mai sulla riga di
-# comando. Il ramo base deve essere già su GitHub con il renovate.json: Renovate legge GitHub, non il clone.
+# comando. Il ramo base deve essere già su GitHub con il renovate.json, che lo script passa a Renovate come
+# configurazione: Renovate legge GitHub, non il clone.
 # Docker va acceso prima e rispento dopo (skill strumenti-locali:docker-locale).
 set -eu
 
@@ -34,9 +37,14 @@ versione=$(sed -n 's/.*renovate-version: *"\([0-9][0-9.]*\)-full".*/\1/p' "$cart
 immagine="renovate/renovate:$versione"
 [ "$modo" = vai ] && immagine="$immagine-full"
 
-# Senza renovate.json sul ramo base Renovate girerebbe con la configurazione di serie (requireConfig optional,
-# perché su master il file non c'è): meglio fermarsi.
-gh api "repos/$repo/contents/renovate.json?ref=$ramo" --silent 2>/dev/null || {
+lavoro=$(mktemp -d)
+trap 'rm -rf "$lavoro"' EXIT
+
+# La configurazione è il renovate.json del ramo base su GitHub, passato come file di configurazione: su master
+# il file non c'è, e Renovate cerca quello dei rami base con il nome trovato su master (useBaseBranchConfig).
+# Senza il file Renovate girerebbe con la configurazione di serie: meglio fermarsi.
+gh api "repos/$repo/contents/renovate.json?ref=$ramo" -H "Accept: application/vnd.github.raw" \
+  > "$lavoro/renovate.json" 2>/dev/null || {
   echo "su $repo il ramo $ramo non ha renovate.json: prima il push del ramo" >&2
   exit 1
 }
@@ -49,8 +57,7 @@ export RENOVATE_TOKEN GITHUB_COM_TOKEN
 set --
 [ "$modo" = prova ] && set -- -e RENOVATE_DRY_RUN=full
 
-log=$(mktemp)
-trap 'rm -f "$log"' EXIT
+log="$lavoro/renovate.log"
 
 echo "Renovate $immagine su $repo, ramo base $ramo ($modo)"
 docker run --rm \
@@ -58,13 +65,17 @@ docker run --rm \
   -e RENOVATE_PLATFORM=github \
   -e RENOVATE_REPOSITORIES="$repo" \
   -e RENOVATE_BASE_BRANCH_PATTERNS="[\"$ramo\"]" \
-  -e RENOVATE_USE_BASE_BRANCH_CONFIG=merge \
+  -v "$lavoro/renovate.json":/tmp/renovate-config.json:ro \
+  -e RENOVATE_CONFIG_FILE=/tmp/renovate-config.json \
   -e RENOVATE_REQUIRE_CONFIG=optional \
   -e RENOVATE_ONBOARDING=false \
   "$@" \
   -e RENOVATE_BINARY_SOURCE=global \
   -e LOG_LEVEL=info \
-  "$immagine" > "$log" 2>&1 || { tail -n 30 "$log"; exit 1; }
+  "$immagine" > "$log" 2>&1 || { tail -n 30 "$log"; [ -z "${SALVA_LOG:-}" ] || cp "$log" "$SALVA_LOG"; exit 1; }
+
+# log completo, se chiesto: SALVA_LOG=<file> sh scripts/renovate-locale.sh ...
+[ -z "${SALVA_LOG:-}" ] || cp "$log" "$SALVA_LOG"
 
 # riassunto: cosa farebbe (prova) o cosa ha fatto (vai), poi avvisi ed errori
 grep -E 'DRY-RUN|Branch created|PR created|PR updated|Dependency Dashboard|WARN|ERROR' "$log" || true

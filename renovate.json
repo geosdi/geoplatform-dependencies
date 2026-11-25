@@ -8,7 +8,7 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 20,
   "labels": ["renovate"],
-  "dependencyDashboardTitle": "Aggiornamenti delle versioni (Renovate)",
+  "dependencyDashboard": { "title": "Aggiornamenti delle versioni (Renovate)" },
   "commitMessageAction": "Aggiorna",
   "rangeStrategy": "bump",
   "enabledManagers": ["maven", "gradle", "gradle-wrapper", "github-actions"],
