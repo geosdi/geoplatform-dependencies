@@ -1,10 +1,11 @@
-# Build Maven e Gradle su ogni pull request verso master, comprese quelle di Renovate: le due build
-# devono restare valide e allineate (CLAUDE.md).
+# Build Maven e Gradle su ogni pull request verso master o spring-upgrade, comprese quelle di Renovate
+# (anche lanciato a mano con scripts/renovate-locale.sh): le due build devono restare valide e allineate
+# (CLAUDE.md).
 name: build
 
 on:
   pull_request:
-    branches: [master]
+    branches: [master, spring-upgrade]
 
 permissions:
   contents: read
