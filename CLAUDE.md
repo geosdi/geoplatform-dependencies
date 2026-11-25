@@ -25,8 +25,12 @@ Hibernate Validator, CXF, ...). La build esiste sia con Maven (`pom.xml`) sia co
     GeoTools 35.2, Jackson 3.3.0, CXF 4.2.4, Hibernate Validator 9.2.0.Final, JUnit 6.1.3,
     Elasticsearch 7.17.29, Gradle 9.9.1.
   - Rimandati: Elasticsearch 9 si fa a mano sul ramo `elasticsearch-9`; la sua major è esclusa da
-    Renovate. Per ora i controlli si fanno in locale con la prova a secco su `spring-upgrade`: master non
-    si tocca, e Renovate su GitHub si accende solo quando i suoi file arrivano su master.
+    Renovate. Per ora master non si tocca: Renovate si lancia a mano con
+    `sh scripts/renovate-locale.sh` (prova, niente su GitHub) o `sh scripts/renovate-locale.sh vai` (PR
+    verso `spring-upgrade`), token dal login di `gh`, Docker acceso prima e spento dopo. Il calendario del
+    workflow `renovate` si accende da solo quando i suoi file arrivano su master.
+  - Da sistemare a mano: `org.geotools:gt-gml` 2.5.5 (solo nel `pom.xml` di GeoTools, non nel
+    `build.gradle`) non esiste in nessun repository e Renovate non lo trova.
   - Dependabot: sul progetto del gruppo sono attivi gli aggiornamenti di sicurezza di Dependabot (PR
     vecchie #19 e #20). Quando Renovate arriva su master conviene tenerne uno solo.
 
