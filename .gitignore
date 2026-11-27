@@ -42,8 +42,10 @@ geoplatform-geotools-dependency.iml
 /geoplatform-cxf-dependency/build/
 /geoplatform-elasticsearch-dependency/build/
 /geoplatform-geotools-dependency/build/
+/geoplatform-gwt-dependency/build/
 /geoplatform-hibernate-validator-dependency/build/
 /geoplatform-httpclient-dependency/build/
+/geoplatform-jakarta-dependency/build/
 /geoplatform-jackson-dependency/build/
 /geoplatform-junit5-dependency/build/
 /geoplatform-lombok-dependency/build/

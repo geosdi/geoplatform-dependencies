@@ -23,7 +23,7 @@ Hibernate Validator, CXF, ...). La build esiste sia con Maven (`pom.xml`) sia co
   - Ultimo controllo: 2026-11-25 (impostazione di Renovate).
   - In uso: Spring 7.1.0, Spring Boot 4.2.0, Spring Security 7.2.0, Spring Batch 6.1.0, springdoc 3.2.1,
     GeoTools 35.2, Jackson 3.3.0, CXF 4.2.4, Hibernate Validator 9.2.0.Final, JUnit 6.1.3,
-    Elasticsearch 7.17.29, Gradle 9.9.1.
+    Elasticsearch 7.17.29, Gradle 9.9.2.
   - Rimandati: Elasticsearch 9 si fa a mano sul ramo `elasticsearch-9`; la sua major è esclusa da
     Renovate. Per ora master non si tocca: Renovate si lancia a mano con
     `sh scripts/renovate-locale.sh` (prova, niente su GitHub) o `sh scripts/renovate-locale.sh vai` (PR
